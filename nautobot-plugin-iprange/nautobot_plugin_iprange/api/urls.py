@@ -4,6 +4,6 @@ from nautobot_plugin_iprange.api.views import IPRangeViewSet
 
 
 router = OrderedDefaultRouter()
-router.register("ip-range", IPRangeViewSet)
+router.register("", IPRangeViewSet)
 
 urlpatterns = router.urls

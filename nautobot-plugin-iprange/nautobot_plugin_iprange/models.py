@@ -34,8 +34,8 @@ class IPRange(PrimaryModel):
             ),
         ]
 
-    # def get_absolute_url(self):
-    #     return reverse('plugins:nautobot_plugin_iprange:iprange')
+    def get_absolute_url(self):
+        return reverse("plugins:nautobot_plugin_iprange:iprange", args=[self.pk])
 
     def __str__(self):
         return f"{self.start_address}-{self.end_address}"
