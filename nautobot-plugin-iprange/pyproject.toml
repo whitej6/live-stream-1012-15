@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "nautobot-plugin-iprange"
+version = "0.1.0"
+description = ""
+authors = ["Jeremy White <jeremy.white@networktocode.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+nautobot = "^1.1.4"
+
+[tool.poetry.dev-dependencies]
+bandit = "*"
+black = "*"
+coverage = "*"
+django-debug-toolbar = "*"
+flake8 = "*"
+invoke = "*"
+mkdocs = "*"
+pydocstyle = "*"
+pylint = "*"
+pylint-django = "*"
+yamllint = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
